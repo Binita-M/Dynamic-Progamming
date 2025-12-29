@@ -11,10 +11,10 @@ public class BigBinaryAddition {
 
         for (int i=n-1; i>=0; i--){
                 int sum = array1[i]+array2[i]+carry;
-                add[i+1] = sum%2;
+                add[i+1] = sum%2; //Insight: sum%2 stored in i+1 position because i position is for carry
                 carry = sum/2;
         }
-        add[0] = carry;
+        add[0] = carry; //Insight: Last carry stored in the first position ie i=0
         return add;
     }
 
