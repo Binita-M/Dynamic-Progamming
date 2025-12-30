@@ -43,7 +43,7 @@ public class MaxSubArrayDivideAndConquer {
 
     public static void main(String[] args) {
         int [] array = {1,4,5,3,8,9,6};
-        System.out.println(maxSubArray(array,0, array.length-1 ));
+        System.out.println("The maximum difference between two elements in this array is: " + maxSubArray(array,0, array.length-1 ));
     }
 }
 
